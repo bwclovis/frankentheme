@@ -1,0 +1,63 @@
+//IMPORT FONTS FROM FONT FOLDER
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/rail-bold-webfont.eot');
+    src: url('../fonts/rail-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rail-bold-webfont.woff') format('woff'),
+         url('../fonts/rail-bold-webfont.ttf') format('truetype'),
+         url('../fonts/rail-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/rail-light-webfont.eot');
+    src: url('../fonts/rail-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rail-light-webfont.woff') format('woff'),
+         url('../fonts/rail-light-webfont.ttf') format('truetype'),
+         url('../fonts/rail-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$body-font: ralewaylight;
+$header-font: ralewaybold;
+
+
+// COLOR SETTINGS
+$pale      : rgb(255,255,166);
+$text      : lighten($pale,10%);
+$yellow    : rgb(189,242,113);
+$lt-gray     : rgb(41,217,194);
+$gray      : rgb(1,162,166);
+$bdark     : rgb(47,41,51);
+$black     : rgb(0,0,0);
+$green		 : rgb(23,205,10);
+$red				:rgb(220,55,67);
+
+//VALIDATION COLORS
+$alert-color: (
+	success: $green,
+	error: $red,
+	alert: $yellow
+);
+
+$border-color: $lt-gray;
+
+//MAP OF DEFAULT BREAKPOINTS USED IN BREAKPOINT MIXIN AND at-breakpoint FUNCTION
+$breaks:(
+	full : 1920px,
+	padL : 1024px,
+	padP : 768px,
+	tab-sm : 600px,
+	six-plus : 414px,
+	six : 375px,
+	phone : 320px
+);
+
+//DEFAULT SETTINGS
+$default-padding: 50px;
+$max-width: 90%;
+$default-border: 1px solid $border-color;
+

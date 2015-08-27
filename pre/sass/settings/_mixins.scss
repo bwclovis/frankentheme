@@ -1,0 +1,55 @@
+@import "settings/functions";
+
+@mixin respond-to($breakpoint) {
+  @media only screen and (max-width: $breakpoint) { @content; }
+}
+
+@mixin createGrid($numCol, $margin, $offset: false) { 
+	//USED IF GUTTER MUST BE SET PX
+  //$newMargin : round(percentage($margin / 1080px));//Should be page max width variable instead of hard coded value.
+  //$width: ((100% - (($numCol - 1) * $newMargin)) / $numCol);
+
+  $width:((100% - (($numCol - 1) * $margin)) / $numCol);
+
+  @if $offset == false {
+    width: $width;
+    margin-right: $margin;
+    margin-bottom: $margin;
+    float: left;
+  
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
+
+  @if $offset != false {
+    width: $offset * 1%;
+    margin-right: $margin;
+    margin-bottom: $margin;
+    float: left;
+
+    &:last-of-type{
+      width:(100 - $offset) * 1% - $margin;
+      margin-right: 0;
+    }
+  }
+}
+
+@mixin background-size{
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+@mixin gradient($top-color, $bottom-color, $percent: 0%) {
+	background: -moz-linear-gradient(top,  $top-color $percent, $bottom-color 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop($percent,$top-color), color-stop(100%,$bottom-color));
+  background: -webkit-linear-gradient(top,  $top-color $percent,$bottom-color 100%);
+  background: -o-linear-gradient(top,  $top-color $percent,$bottom-color 100%);
+  background: -ms-linear-gradient(top,  $top-color $percent,$bottom-color 100%);
+  background: linear-gradient(to bottom,  $top-color $percent,$bottom-color 100%);
+}

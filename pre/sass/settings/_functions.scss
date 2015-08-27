@@ -1,0 +1,19 @@
+// LOOP FOR BREAKPOINTS
+@function breakpoint($key) {
+	@if map-has-key($breaks, $key) {
+		@return map-get($breaks, $key);
+	}
+
+	@warn "The breakpoint '#{$key}'px in $breaks is not known by this site. If needed please add to the $breaks map in variables.scss. ";
+	@return null;
+}
+
+// LOOP FOR alert-colors
+@function alert($key) {
+	@if map-has-key($alert-color, $key) {
+		@return map-get($alert-color, $key);
+	}
+
+	@warn "The color '#{$key}' is not a known validation color. Selector ignored. ";
+	@return null;
+}

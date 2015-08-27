@@ -1,0 +1,91 @@
+.grid-base {
+	overflow: hidden;
+	padding:$default-padding 0 $default-padding/2;
+	border-top: $default-border;
+	border-bottom: $default-border;
+	border-bottom-color: transparent;
+
+	&+.grid-base {
+		border-top-color: transparent;
+		padding-top: 0;
+	}
+
+	&:last-of-type {
+		border-bottom-color: $border-color;
+	}
+	
+	.col .grid-base {
+		border: none;
+		padding: 0;
+	}
+
+	&-one {
+		.col {
+			@include createGrid(1,2%);
+		}
+	}
+
+	&-two {
+		.col {
+			@include createGrid(2,2%);
+
+			@include respond-to(breakpoint(tab-sm)){
+				@include createGrid(1,3%);
+			}
+		}
+	}
+
+	&-three {
+		.col {
+			@include createGrid(3,2%);
+
+			@include respond-to(breakpoint(padP)){
+				@include createGrid(1,2%);
+			}
+		}
+	}
+
+	&-four {
+		.col {
+			@include createGrid(4,2%);
+
+			@include respond-to(breakpoint(padP)){
+				@include createGrid(2,2%);
+
+				&:nth-child(even) {
+					margin-right: 0;
+				}
+			}
+
+			@include respond-to(breakpoint(six-plus)){
+				@include createGrid(1,2%);
+			}
+		}
+	}
+
+	&-third-left {
+		.col {
+			@include createGrid(2,2%,33);
+
+			@include respond-to(breakpoint(padP)){
+				@include createGrid(1,2%,100);
+				&:last-child {
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&-third-right {
+		.col {
+			@include createGrid(2,2%,66);
+
+			@include respond-to(breakpoint(padP)){
+				@include createGrid(1,2%,100);
+				&:last-child {
+					width: 100%;
+				}
+			}
+		}
+	}
+}

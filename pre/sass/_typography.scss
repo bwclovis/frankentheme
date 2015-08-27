@@ -1,0 +1,33 @@
+%header-settings {
+	font-family: $header-font;
+}
+
+body {
+	font-family: $body-font;
+}
+
+//SETS UP HEADER CLASSES FOR SEMATIC MARKUP
+h1,
+.h1 {
+	@extend %header-settings;
+	font-size: 2.5em;
+}
+
+h2,
+.h2 {
+	@extend %header-settings;
+	font-size: 2em;
+	text-align: center;
+}
+
+h3,
+.h3 {
+	@extend %header-settings;
+	font-size: 1.25em;
+}
+
+h4,
+.h4 {
+	@extend %header-settings;
+	font-size: 1.124em;
+}
