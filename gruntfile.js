@@ -111,7 +111,7 @@ module.exports = function(grunt){
 		 }//watch
   });//initconfig
 	
-grunt.registerTask('scripts','Compiles the JavaScript files.',[ 'concat', 'uglify']);
+grunt.registerTask('scripts','Compiles the JavaScript files.',[ 'concat', 'uglify','coffee']);
 grunt.registerTask('build','Compiles all of the assets.',[ 'clean:build', 'copy', 'scripts' ]);
 grunt.registerTask('document','Documents code in js and sass docs.',[ 'jsdoc-ng', 'sassdoc']);
 grunt.registerTask('default','Watches the project for changes, automatically builds.',[ 'build','watch']);
