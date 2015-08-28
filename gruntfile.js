@@ -45,6 +45,15 @@ module.exports = function(grunt){
 					}//options
 				}//dev
 			},//compass
+			coffee: {
+	  		build: {
+	    		expand: true,
+	    		cwd: 'pre/coffee',
+	    		src: [ '*.coffee' ],
+	    		dest: 'pre/scripts',
+	    		ext: '.js'
+	  		}
+			},//COFFEE
 		 sassdoc: {
 				build: {
 					src: 'pre/sass/*.scss',
