@@ -3,12 +3,12 @@ frankentheme
 A Lightweight Wordpress Development Theme
 
 frankentheme is designed to make the life of developers easier. It's built
-using HTML5 & has a strong semantic foundation.
-It's constantly growing so be sure to check back often if you are a
-frequent user. I'm always open to contribution. :)
+using HTML5 & has a strong semantic foundation. This a changed version of Eddie Machados Bones theme.
 
 Designed by Eddie Machado
-http://themble.com/frankentheme
+http://themble.com/bones
+
+And Brian Clovis
 
 License: WTFPL
 License URI: http://sam.zoy.org/wtfpl/
@@ -26,8 +26,5 @@ https://github.com/eddiemachado/frankentheme/issues
 
 To view Release & Update Notes, read the log.txt file inside
 the library folder.
-
-For more news and to see why my parents constantly ask me what I'm
-doing with my life, follow me on twitter: @eddiemachado
 
 ******************************************************************/
