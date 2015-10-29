@@ -8,4 +8,4 @@ javascripts_dir = 'public/scripts'
 relative_assets = true
 line_comments = true
 sourcemap = true
-output_style = :expnaded
+output_style = :compressed
