@@ -1,1 +1,1 @@
-!function(){"use strict"}(),function(){}.call(this);
+!function(){"use strict";alert("nuts")}(),function(){}.call(this);
