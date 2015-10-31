@@ -39,7 +39,7 @@ module.exports = function(grunt){
 	        banner: '/*! <%= pkg.name %> <%= pkg.version %> filename.min.js <%= grunt.template.today("yyyy-mm-dd h:MM:ss TT") %> */\n'
         },
         files: {
-        	[BUILD_DIR +'scripts/prod.min.js']:['<%= concat.dist.dest %>']
+        	'public/scripts/prod.min.js':['<%= concat.dist.dest %>']
         }
 			}
 		},//END UGLIFY
