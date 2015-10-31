@@ -122,7 +122,7 @@ function frankentheme_scripts_and_styles() {
     }
 
 		//adding scripts file in the footer
-		wp_register_script( 'frankentheme-js', get_stylesheet_directory_uri() . '/public/scripts/prod.js', array( 'jquery' ), '', true );
+		wp_register_script( 'frankentheme-js', get_stylesheet_directory_uri() . '/public/scripts/prod.min.js', array( 'jquery' ), '', true );
 
 		// enqueue styles and scripts
 		

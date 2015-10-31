@@ -14,14 +14,23 @@
     "grunt-contrib-watch": "~0.6.0",
     "grunt-jsdoc-ng": "0.0.3",
     "grunt-sassdoc": "^2.0.0",
+    "grunt-wp-theme-check": "^0.1.2",
+    "jshint": "^2.8.0",
     "load-grunt-tasks": "^3.3.0"
   },
   "engine": "node >= 0.10",
   "description": "WordPress HTML5 template",
   "main": "gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
+  "repository" : {
+  	"type" : "git",
+  	"url" : "https://github.com/bwclovis/frankentheme.git"
+	},
+	"bugs" : {
+		"url" : "https://github.com/bwclovis/frankentheme/issues"
+	},
   "author": "bwclovis (bwclovis@gmail.com)",
   "license": "ISC"
 }
