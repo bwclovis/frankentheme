@@ -1,10 +1,3 @@
-# WHATS NEW
-Reconfigure of Grunt file for much faster builds.
-Added feature for documentation - Use Command grunt doc.
-	* jsdoc: [http://usejsdoc.org/](http://usejsdoc.org/)
-	* sassdoc : [http://sassdoc.com/](http://sassdoc.com/)
-Added test feature - npm test or grunt test. Testing feature will be updated in next patch.
-
 # Set Up Directions.
 
 This build is dependent on Ruby, Sass, Grunt, Compass and Node.js

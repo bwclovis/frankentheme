@@ -6,6 +6,13 @@ Based on Eddie Machado's Bones theme.
 This blank template is easy to expand to fit your needs. Extending details will be listed below. This is a constantly updating template based someone on HTML5 Boilerplate [https://github.com/bwclovis/wordpress-template.git](https://github.com/bwclovis/wordpress-template)
 * Source: [https://github.com/bwclovis/wordpress-template.git](https://github.com/bwclovis/wordpress-template)
 
+## WHATS NEW
+Reconfigure of Grunt file for much faster builds.
+Added feature for documentation - Use Command grunt doc.
+* jsdoc: [http://usejsdoc.org/](http://usejsdoc.org/)
+* sassdoc : [http://sassdoc.com/](http://sassdoc.com/)
+Added test feature - npm test or grunt test. Testing feature will be updated in next patch.
+
 ## Features
 
 * GRUNT task manager for compile of Coffescript, And Sass
