@@ -26,7 +26,7 @@ Added test feature - npm test or grunt test. Testing feature will be updated in 
 * Default print CSS, performance optimized.
 * An optimized Google Analytics snippet.
 * Apache server caching, compression, and other configuration defaults for
-  Grade-A performance
+  Grade-A performance.
 
 
 ## Directions / Documentation
